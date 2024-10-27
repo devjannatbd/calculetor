@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white rounded-lg shadow-md p-6 w-96">
+        <h1 class="text-2xl font-bold mb-4 text-center">Calculator</h1>
+        <input type="text" id="result" class="border border-gray-300 rounded w-full p-2 mb-4 text-right" disabled>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="bg-red-500 text-white rounded p-2" onclick="clearResult()">AC</button>
+            <button class="bg-gray-300 rounded p-2" onclick="deleteResult()">DEL</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('/')">/</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('*')">*</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('7')">7</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('8')">8</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('9')">9</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('-')">-</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('4')">4</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('5')">5</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('6')">6</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('+')">+</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('1')">1</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('2')">2</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('3')">3</button>
+            <button class="bg-gray-300 rounded p-2" onclick="Result('0')">0</button>
+            <button class="bg-gray-300 rounded col-span-4 p-2" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="calculetor.js"></script>
+</body>
+
+</html>
